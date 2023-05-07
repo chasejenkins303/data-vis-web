@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import JailData from './JailData'
 import AfricanPopDenstiy from './AfricanPopDensity'
+import PoliticalData from './PoliticalData'
 
 function App() {
   const [active, setActive]= useState("")
@@ -12,10 +13,12 @@ function App() {
       <nav className='buttons'>
         <button onClick={() => setActive("JailData")}>Jail Data</button>
         <button onClick={() => setActive("African Population Density")}>African Population Density</button>
+        <button onClick={() => setActive("Political Ideology of Congress")}>Political Ideology of Congress</button>
       </nav>
-      <div>
+      <div className='present'>
         {active === "JailData" && <JailData/>}
         {active === "African Population Density" && <AfricanPopDenstiy/>}
+        {active === "Political Ideology of Congress" && <PoliticalData/>}
       </div>
 
     </div>
