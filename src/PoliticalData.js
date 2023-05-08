@@ -14,7 +14,7 @@ function Notebook() {
   return (
     <>
       <div ref={ref} />
-      <p>Credit: <a href="https://observablehq.com/d/7ed0069f27285f61@46">Plot of Political Ideologies of Members of Congress by Dynamic Data Visualization 373</a></p>
+      {/* <p>Credit: <a href="https://observablehq.com/d/7ed0069f27285f61@46">Plot of Political Ideologies of Members of Congress by Dynamic Data Visualization 373</a></p> */}
     </>
   );
 }
