@@ -7,8 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.buttons>button:hover{
+  box-shadow: 10px 5px 5px black;
+  transition: 0.7s;
+}
+
 .buttons>button{
   margin: 10px;
+  width:fit-content;
+  height: 50px;
+  font-size: 0.9em;
+  /* box-shadow: 10px 5px 5px black; */
 }
 
 .present{

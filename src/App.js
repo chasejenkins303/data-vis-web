@@ -19,6 +19,7 @@ function App() {
 
       </nav>
       <div className='present'>
+        {active === "" && <section>Use the buttons at the top of the screen to navigate</section>}
         {active === "JailData" && <JailData/>}
         {active === "African Population Density" && <AfricanPopDenstiy/>}
         {active === "Political Ideology of Congress" && <PoliticalData/>}
