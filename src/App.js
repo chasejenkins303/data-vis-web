@@ -5,6 +5,7 @@ import JailData from './JailData'
 import AfricanPopDenstiy from './AfricanPopDensity'
 import PoliticalData from './PoliticalData'
 import USMap from './USMap'
+import UniSalaries from './UniSalaries'
 
 function App() {
   const [active, setActive]= useState("")
@@ -16,6 +17,8 @@ function App() {
         <button onClick={() => setActive("African Population Density")}>African Population Density</button>
         <button onClick={() => setActive("Political Ideology of Congress")}>Political Ideology of Congress</button>
         <button onClick={() => setActive("US Map")}>US Cities Population Density</button>
+        <button onClick={() => setActive("Prof Salaries")}>Professor Salaries NC</button>
+
 
       </nav>
       <div className='present'>
@@ -24,6 +27,7 @@ function App() {
         {active === "African Population Density" && <AfricanPopDenstiy/>}
         {active === "Political Ideology of Congress" && <PoliticalData/>}
         {active === "US Map" && <USMap/>}
+        {active === "Prof Salaries" && <UniSalaries/>}
       </div>
 
     </div>
